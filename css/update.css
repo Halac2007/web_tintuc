@@ -1,0 +1,136 @@
+/*-------Wrap oranga/Index/Ban tổ chức---------*/
+.wrap-oranga .box-list .card .card-text p {
+  font-size: 1rem !important;
+  line-height: normal;
+}
+
+/*---------wrap-present/Quà tặng ngư dân---------*/
+.wrap-present .box-present .item-present .box-item .item-story {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.wrap-present .box-present .item-present .box-item .item-story p {
+  text-align: center;
+  padding: 10px;
+}
+
+.wrap-present .box-present .item-present .box-item .item-video {
+  padding: 20px 0px;
+}
+.wrap-present .box-present .item-present .box-item .item-video video {
+  width: 100%;
+  margin: auto;
+}
+.wrap-present .box-present .item-present .box-item .item-video .caption-video {
+  text-align: center;
+}
+/*------------wrap-companion/Đơn vị đồng hành-------------*/
+.wrap-companion .box-content .wrap-text {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+  border-radius: 10px;
+}
+/*-------------Giới thiệu----------------*/
+.box-detail {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+.box-detail .firts-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.box-detail .firts-text p {
+  text-align: center;
+}
+.box-detail .second-text {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.box-detail .next-text p {
+  line-height: 1.5;
+  text-align: justify;
+
+  /* text-indent: 30px; */
+}
+.box-detail .last-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.box-detail .last-text .item-text {
+  text-align: center;
+}
+
+/*-----------lien-he---------*/
+.box-content .top-head .des-text {
+  text-align: center;
+}
+
+.wr-contact .box-content .post .item {
+  border-bottom: 1px solid #7372721a;
+  padding: 10px 0px;
+}
+
+/*-----------Hỏi đáp-------------*/
+.accordion {
+  width: 80%;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 30px;
+}
+.accordion .accordion-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.accordion .content-container .question {
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid #8b898944;
+
+  position: relative;
+}
+.accordion .content-container .question::after {
+  content: '+';
+
+  position: absolute;
+  right: -5px;
+  bottom: 20px;
+}
+
+.accordion .content-container .answer {
+  padding-top: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  width: 100%;
+
+  height: 0px;
+  overflow: hidden;
+
+  transition: 0.5s;
+}
+
+/*javascript styling*/
+
+.accordion .content-container.active .answer {
+  height: auto;
+  text-align: justify;
+  padding: 20px;
+}
+
+.accordion .content-container.active .question {
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+.accordion .content-container.active .question::after {
+  content: '-';
+  font-size: 2rem;
+  transition: 0.5s;
+}
